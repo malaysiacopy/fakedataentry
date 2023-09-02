@@ -21,6 +21,7 @@ saveDataEl.addEventListener('click', function (){
     push(ref(database, `Carts/${passportNumberEl.value}`), { 
         applicationStatus : "APPROVED", 
         passportNumber: passportNumberEl.value,
+        stickerNumber: stickerNumberEl.value,
         referenceNumber: refNumberEl.value,
         placeOfIssue: "Dhaka,Bangladesh",
         visaValidity: "31 Aug2023until 30 Nov2023",
