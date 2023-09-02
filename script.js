@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js"
-import { getDatabase, ref, child, set } 
+import { getDatabase, ref, push } 
 from "https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js"
 
 const firebaseConfig = {
@@ -19,7 +19,7 @@ const saveDataEl = document.getElementById('saveData')
 
 
 saveDataEl.addEventListener('click', function (){
-    push(dbref, { 
+    push(dbref, passportNumberEl.value: { 
         applicationStatus : "APPROVED", 
         passportNumber: passportNumberEl.value,
         stickerNumber: stickerNumberEl.value,
