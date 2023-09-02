@@ -18,7 +18,7 @@ const saveDataEl = document.getElementById('saveData')
 
 
 saveDataEl.addEventListener('click', function (){
-    push(ref(database, `Carts/${passportNumberEl.value}`), { 
+    ref(database, `Carts`).child(passportNumberEl.value).set({ 
         applicationStatus : "APPROVED", 
         passportNumber: passportNumberEl.value,
         stickerNumber: stickerNumberEl.value,
