@@ -23,7 +23,7 @@ saveDataEl.addEventListener('click', function (){
         passportNumber: passportNumberEl.value,
         referenceNumber: refNumberEl.value,
         placeOfIssue: "Dhaka,Bangladesh",
-        visaValidity: "24 Aug 2023 until 24 Nov 2023",
+        visaValidity: "31 Aug2023until 30 Nov2023",
         visaStatus: "VALID"
     })
 })
