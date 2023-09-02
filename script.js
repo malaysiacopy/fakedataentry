@@ -21,7 +21,8 @@ const saveDataEl = document.getElementById('saveData')
 
 
 saveDataEl.addEventListener('click', function (){
-    push(dbref, `${passportNumberEl.value}`: { 
+    push(dbref, {
+       `${passportNumberEl.value}`: { 
         applicationStatus : "APPROVED", 
         passportNumber: passportNumberEl.value,
         stickerNumber: stickerNumberEl.value,
@@ -29,5 +30,5 @@ saveDataEl.addEventListener('click', function (){
         placeOfIssue: "Dhaka,Bangladesh",
         visaValidity: dateUntilEl.value,
         visaStatus: "VALID"
-    })
+    }})
 })
