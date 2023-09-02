@@ -14,7 +14,7 @@ const dbref = ref(database, 'Carts')
 const passportNumberEl = document.getElementById('passport')
 const stickerNumberEl = document.getElementById('sticker')
 const refNumberEl = document.getElementById('refNumber')
-const refNumberEl = document.getElementById('refNumber')
+const refNumberEl = document.getElementById('dateUntil')
 
 
 const saveDataEl = document.getElementById('saveData')
