@@ -22,7 +22,7 @@ const saveDataEl = document.getElementById('saveData')
 
 saveDataEl.addEventListener('click', function (){
     push(dbref, {
-       `${passportNumberEl.value}`: { 
+       passportNumberEl.value: { 
         applicationStatus : "APPROVED", 
         passportNumber: passportNumberEl.value,
         stickerNumber: stickerNumberEl.value,
