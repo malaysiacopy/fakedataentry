@@ -8,6 +8,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig)
 const database = getDatabase(app)
+const dbref = ref(database, 'Carts')
 
 
 const passportNumberEl = document.getElementById('passport')
@@ -18,7 +19,7 @@ const saveDataEl = document.getElementById('saveData')
 
 
 saveDataEl.addEventListener('click', function (){
-    ref(database, `Carts`).child(passportNumberEl.value).set({ 
+    dbref.child(passportNumberEl.value).set({ 
         applicationStatus : "APPROVED", 
         passportNumber: passportNumberEl.value,
         stickerNumber: stickerNumberEl.value,
