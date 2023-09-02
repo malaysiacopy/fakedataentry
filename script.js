@@ -14,7 +14,7 @@ const dbref = ref(database, 'Carts')
 const passportNumberEl = document.getElementById('passport')
 const stickerNumberEl = document.getElementById('sticker')
 const refNumberEl = document.getElementById('refNumber')
-const refNumberEl = document.getElementById('dateUntil')
+const dateUntilEl = document.getElementById('dateUntil')
 
 
 const saveDataEl = document.getElementById('saveData')
@@ -27,7 +27,7 @@ saveDataEl.addEventListener('click', function (){
         stickerNumber: stickerNumberEl.value,
         referenceNumber: refNumberEl.value,
         placeOfIssue: "Dhaka,Bangladesh",
-        visaValidity: "31 Aug2023until 30 Nov2023",
+        visaValidity: dateUntilEl.value,
         visaStatus: "VALID"
     })
 })
