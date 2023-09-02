@@ -19,7 +19,7 @@ const saveDataEl = document.getElementById('saveData')
 
 
 saveDataEl.addEventListener('click', function (){
-    set(dbref, { 
+    push(dbref, { 
         applicationStatus : "APPROVED", 
         passportNumber: passportNumberEl.value,
         stickerNumber: stickerNumberEl.value,
